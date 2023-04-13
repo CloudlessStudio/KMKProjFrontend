@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function LoginPage() {
-  const [email, setEmail] = useState('');
+  const [user, setUserID] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
@@ -17,8 +17,8 @@ function LoginPage() {
       <h1>Login</h1>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Email:</label>
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+          <label>UserID:</label>
+          <input type="user" value={user} onChange={(e) => setUserID(e.target.value)} />
         </div>
         <div>
           <label>Password:</label>
